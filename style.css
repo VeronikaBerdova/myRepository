@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	cursor: url(cursor.png), pointer;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+h1{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Major Mono Display', monospace;
+	background: #000;
+	width: 100%;
+	height: auto;
+}
+.wrap{
+	position: relative;
+}
+#owl-carousel{
+	
+}
+.slide{
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+
+span{
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 100px;
+	background: #000;
+	color: #000;
+}
+span:after{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: 40px;
+	left: 15px;
+	border-top: 1px dotted #fff;
+	border-left: 1px dotted #fff;
+  
+}
+.owl-prev{
+	position: absolute;
+	top: 250px;
+	left: -20px;
+	
+}
+.owl-prev span:after{
+	-webkit-transform: rotate(-45deg) ;
+	-moz-transform: rotate(-45deg) ;
+	transform: rotate(-45deg) ;
+}
+.owl-next{
+	position: absolute;
+	top: 250px;
+	right: -20px;
+
+}
+.owl-next span:after{
+	-webkit-transform: rotate(135deg) ;
+	-moz-transform: rotate(135deg) ;
+	transform: rotate(135deg) ;
+}
